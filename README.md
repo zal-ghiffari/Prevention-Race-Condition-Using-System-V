@@ -4,6 +4,9 @@ pada php dapat menggunakan --enable-sysvsem untuk menanganinya, dalam hal ini pe
 
 Pada variable sem, menggunakan sem_get untuk mendapatkan key, dimana pada contoh tersebut menggunakan 1234 sebagai kunci kemudian 1 sebagai parameter yang ditentukan untuk menentukan jumlah maksimum proses/request yang dapat mendapatkan key sekaligus. Artinya jika sebuah request telah memperoleh key 1234 tetapi belum menggunakannya, dan request lain melakukan pemanggilan fungsi sem_acquire pada kunci yang sama, panggilan akan ditolak sampai request pertama menggunakan kuncinya. Jadi teknik ini dapat mencegah serangan race condition. 
 
+## Credit
 Fix vuln by zal - RPLK
+
+[![Telegram](https://img.shields.io/badge/chat-Telegram-blue.svg)](https://t.me/better_enola)
 
 Untuk memenuhi UTS Secure Programming
